@@ -1,0 +1,103 @@
+.container.difficulty-container
+{
+    color: var(--primary-text-color);
+    background-color: var(--difficulty-bar-background-color);
+    height: 80px;
+    box-shadow: var(--box-shadow);
+    gap: 30px;
+    font-size: 25px;
+}
+
+.container.difficulty-container select
+{
+    font-family: inherit;
+    height: 40px;
+    font-size: inherit;
+    width: 150px;
+    cursor: pointer;
+}
+
+.container.difficulty-container select option
+{
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* Section: Game */
+section.game
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-text-color);
+    background-color: var(--application-container-background-color);
+    height: 350px;
+    width: 650px;
+    box-shadow: var(--box-shadow);
+}
+
+section.game header
+{
+    height: 60px;
+    color: var(--primary-text-color);
+    background-color: var(--application-heading-background-color);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+section.game .container.word-to-type-container span
+{
+    font-size: 30px;
+}
+
+section.game .container.word-input-container
+{
+    margin-top: -30px;
+    width: 100%;
+}
+
+section.game .container.word-input-container input
+{
+    font-family: inherit;
+    width: 250px;
+    color: var(--word-input-text-color);
+    background-color: var(--word-input-background-color);
+    text-indent: 10px;
+    border: 1px solid var(--word-input-text-color)
+}
+
+/* Game Over */
+.container.reset-game-container
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--application-container-background-color);
+    height: 100%;
+    width: 100%;
+}
+
+.container.reset-game-container .reset-game-content-container
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container.reset-game-container .reset-game-content-container h4
+{
+    font-size: 20px;
+}
+
+.container.reset-game-container .reset-game-content-container .btn.reset-game-btn
+{
+    font-family: inherit;
+    font-size: 17px;
+    color: var(--word-input-text-color);
+    background-color: var(--application-heading-background-color);
+    cursor: pointer;
+}

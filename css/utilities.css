@@ -1,0 +1,18 @@
+:root
+{
+    /* Colors */
+    --body-background-color: #253644;
+    --primary-text-color: #fff;
+    --difficulty-bar-background-color: #1b2730;
+    --application-container-background-color: #2e3f52;
+    --application-heading-background-color: #1b2730;
+    --word-input-background-color: #1b2730;
+    --word-input-text-color: #4ee14e;
+
+    /* Radii */
+    --base-border-radius: 10px;
+
+    /* Shadows */
+    --text-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}

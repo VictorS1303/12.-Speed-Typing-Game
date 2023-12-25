@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <!-- <script src="https://kit.fontawesome.com/e05f21b32e.js" crossorigin="anonymous"></script> -->
+    <script src="js/main.js" defer></script>
+    <title>Speed Typing Game</title>
+</head>
+
+<body>
+    <main>
+        <div class="container difficulty-container d_flex jc_center ai_center">
+            <select class="selet difficulty-select" id="difficulty_select">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+
+        <section class="game" id="game">
+            <div class="container game-container">
+                <header class="header game-container-header d_flex jc_center ai_center margin-xxl">
+                    <h1>Speed Typer</h1>
+                </header>
+
+                <div class="container time-and-score-container d_flex jc_space-between padding-y_xxl">
+                    <div class="container time-container">
+                        <h1>
+                            Time left: <span class="number time-counter-number" id="time_counter_number">20</span>s
+                        </h1>
+                    </div>
+
+                    <div class="container score-container">
+                        <h1>
+                            Score: <span class="number score-counter-number" id="score_counter_number">20</span>s
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="container word-to-type-container d_flex fd_column jc_center ai_center margin-x_xxxl">
+                    <h1>Type the following:</h1>
+                    <span class="word type-word margin-x_s" id="type_word">
+                        superficial
+                    </span>
+                </div>
+
+                <div class="container word-input-container d_flex jc_center ai_center" id="word_input_container">
+                    <input type="text" class="input word-input padding-x_s" id="word_input" placeholder="Enter word">
+                </div>
+            </div>
+
+            <div class="container reset-game-container d_none" id="reset_game_container">
+                <div class="container reset-game-content-container text-align-center">
+                    <h1>Time ran out!</h1>
+                    <h4 class="margin-x_ts">
+                        Your final score is: <span class="number final-score-number" id="final_score_number">20</span>
+                        points
+                    </h4>
+
+                    <button class="btn reset-game-btn d_inline-block margin-x_xxl padding-s" id="reset_game_btn">
+                        Reset Game
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
